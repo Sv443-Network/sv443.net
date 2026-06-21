@@ -3,7 +3,7 @@
 // easter egg query strings:
 // ?epilepsy
 // ?wtf
-// ?spook_mode
+// ?spooky
 
 const theme = Object.freeze({
     change: () => {
@@ -80,7 +80,7 @@ function indexonload() {
         rbow({
             "keyCode": 16
         });
-    if(d.getMonth() == 9 && d.getDate() == 31 || queryStr.includes("spook_mode"))
+    if(d.getMonth() == 9 && d.getDate() == 31 || queryStr.includes("spooky"))
         getspooked();
 
     const logo = document.querySelector("#logo");
@@ -131,25 +131,25 @@ function getspooked() {
     audio.play();
     audio.loop = true;
 
-    let spook1 = document.createElement("img");
-    spook1.style.height = "10em";
-    spook1.src = "https://78.media.tumblr.com/828ab575b1894f3901ae7a05bb27f2cc/tumblr_n6hhknZQv91r2vz4uo1_400.gif"
-    document.getElementsByTagName("header")[0].prepend(spook1);
+    let spooky1 = document.createElement("img");
+    spooky1.style.height = "10em";
+    spooky1.src = "https://78.media.tumblr.com/828ab575b1894f3901ae7a05bb27f2cc/tumblr_n6hhknZQv91r2vz4uo1_400.gif"
+    document.getElementsByTagName("header")[0].prepend(spooky1);
 
-    let spook2 = document.createElement("img");
-    spook2.style.height = "10em";
-    spook2.src = "https://i.kym-cdn.com/entries/icons/facebook/000/011/121/SKULL_TRUMPET_0-1_screenshot.jpg";
-    document.getElementById("projects").appendChild(spook2);
+    let spooky2 = document.createElement("img");
+    spooky2.style.height = "10em";
+    spooky2.src = "https://c7.alamy.com/comp/C444BM/an-alcoholic-skeleton-C444BM.jpg";
+    document.getElementById("projects").appendChild(spooky2);
 
-    let spook3div = document.createElement("div");
-    spook3div.style.textAlign = "center";
-    let spook3 = document.createElement("img");
-    spook3.style.height = "10em";
-    spook3.src = "https://cdn03.plentymarkets.com/chg0wln2n7ix/item/images/102979/full/Jack-O-Lantern-Halloween-Kuerbis-Windlicht-21x19-c.jpg";
-    spook3div.appendChild(spook3);
-    document.getElementsByTagName("main")[0].append(spook3div);
+    let spooky3div = document.createElement("div");
+    spooky3div.style.textAlign = "center";
+    let spooky3 = document.createElement("img");
+    spooky3.style.height = "10em";
+    spooky3.src = "https://cdn03.plentymarkets.com/chg0wln2n7ix/item/images/102979/full/Jack-O-Lantern-Halloween-Kuerbis-Windlicht-21x19-c.jpg";
+    spooky3div.appendChild(spooky3);
+    document.getElementsByTagName("main")[0].append(spooky3div);
 
-    document.getElementById("title").innerHTML = "🎃 Spook443 Network 🎃";
+    document.getElementById("title").innerHTML = "🎃 Spooky443 Network 🎃";
 }
 
 function setCookie(key, value, expires = 365) {
